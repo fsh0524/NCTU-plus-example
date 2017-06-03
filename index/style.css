@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'cwTeXHei';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}
+body {
+	color: white;
+	font-family: 'cwTeXHei', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+}
+body:before {
+	content: "";
+	background: #000 url('images/bg.jpg') no-repeat center center fixed; 
+	background-size: cover;
+	display: block;
+	left: -5px;
+	top:-5px;
+	bottom:-5px;
+	position: fixed;
+	right: -5px;
+	z-index: -1;
+	-webkit-filter: blur(5px) sepia(100%) brightness(37%);
+	-moz-filter: blur(5px) sepia(100%) brightness(37%);
+	-o-filter: blur(5px) sepia(100%) brightness(37%);
+	-ms-filter: blur(5px) sepia(100%) brightness(37%);
+	filter: blur(5px) sepia(100%) brightness(37%);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	margin: -5px;
+}
+.container {
+	margin: 15px 0 15px calc(50% - 380px);
+	width: 760px;
+	z-index: 9999;
+	padding: 5px 0 1px 0;
+	background-color: rgba(50, 50, 50, 0.7);
+}
+.hgroup {
+	width: 100%;
+	margin: 60px 70px 30px 70px;
+}
+.hgroup h1 {
+	font-size: 3.4em;
+	margin: 0 0 0 0;
+	font-family: 'cwTeXHei', serif;
+}
+.hgroup p {
+	font-size: 2em;
+	margin: 0 0 0 0;
+	color: grey;
+}
+.logo {
+	float: left;
+	vertical-align: middle;
+	margin-right: 1em;
+	max-height: 110px;
+	border:2px solid white;
+	background-color:#fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+.content {
+	margin: 50px 70px 0px 70px;
+	line-height: 1.8;
+}
+.content a {
+	padding: 0 2px 0 2px;
+	background-color: rgba(218, 165, 32, 0.4);
+	border-bottom: 1px dotted #000;
+    text-decoration: none;
+    color: gold;
+}
+.links-of-author {
+	display: block;
+ 	margin: 20px 70px 60px 70px;
+}
+.links-of-author a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	padding: 8px 8px 8px 8px;
+	margin: 3px 3px 3px 3px;
+	color: #f0f0f0;
+	border: 2px solid #f0f0f0;
+	border-radius: 50px;
+}
+.links-of-author a:hover {
+	color: #fff;
+	background: #f0f0f0;
+}
+.links-of-author img {
+	height: 50%;
+	width: 50%;
+	display: block;
+	margin: 7px auto;
+}
+.links-of-author a:hover img {
+	-webkit-filter: invert(100%);
+	-moz-filter: invert(100%);
+	-o-filter: invert(100%);
+	-ms-filter: invert(100%);
+	filter: invert(100%);
+}
+@media (max-width: 800px) {
+	.container {
+		margin-left: 5%;
+		width: 90%;
+	}
+	.logo {
+		float: none;
+		display: table;
+		margin: 0 auto;
+	}
+	.hgroup {
+		margin-left: 0;
+		margin-right: 0;
+		text-align: center;
+	}
+	.content {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.links-of-author {
+		margin: 0 0 5px 0;
+		text-align: center;
+	}
+}
